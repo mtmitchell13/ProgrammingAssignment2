@@ -1,7 +1,12 @@
 ## The two functions below, makeCacheMatrix and cacheSolve, cache
 ## the inverse of a square matrix so it can be computed repeatedly
 
-## makeCacheMatrix creates a square matrix that can cache its inverse
+## makeCacheMatrix creates a special "matrix", which is really list containing
+## a function to:
+## 1. set the value of the matrix
+## 2. get the value of the matrix
+## 3. set the value of the inverse of the matrix
+## 4. get the value of the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
